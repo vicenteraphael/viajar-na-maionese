@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viajar na Maionese | Post</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <h1>{{ post['title'] }}</h1>
-    
-    {{ post['content'] }}
+    <p><em>Por {{ post['author'] }} em {{ post['date'] }}</em></p>
+    <div>
+        {{ post.content | safe }}
+    </div>
 </body>
 </html>
