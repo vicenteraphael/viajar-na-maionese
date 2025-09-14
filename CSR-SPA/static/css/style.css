@@ -24,9 +24,15 @@ body {
 #result{
     border: black solid 1px;
     border-radius: 20px;
-    
+    margin: auto;
+    width: 70%;
+    padding: 50px;
 }
 
+#report {
+  text-align: justify;
+  line-height: 25px;
+}
 
 .post{
     width: 100%;
