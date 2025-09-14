@@ -16,20 +16,21 @@
     -->
     <div id="explore">
         {% for post in posts %}
-
-            <article>
-                <h2 data-id="{{ post['id'] }}">{{ post['title'] }}</h2>
-                <p><em>Publicado em {{ post['date'] }} por {{ post['author'] }}</em></p>
-            </article>
+            <a href="#result">
+                <article class="post">
+                    <h2 data-id="{{ post['id'] }}" >{{ post['title'] }}</h2>
+                    <p><em>Publicado em {{ post['date'] }} por {{ post['author'] }}</em></p>
+                </article>
+            </a>
+            <br>
 
         {% endfor %}
     </div>
     
-        <div>
-            <h1 id="name"></h1>
-            <p id="header"><em></em></p>
-            <div id="report">
-            </div>
+        <div id="result">
+            <b><h1 id="name"></h1></b>
+            <b><p id="header"><em></em></p></b> <br>
+            <div id="report"></div>
         </div>
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
