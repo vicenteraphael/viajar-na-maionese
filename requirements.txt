@@ -1,3 +1,4 @@
 Flask
 python-markdown
+markdown
 python-frontmatter

@@ -13,7 +13,7 @@
 
         <article>
             <h2><a href="{{ url_for('blog_post', id=post['id']) }}">{{ post['title'] }}</a></h2>
-            <p><em>Publicado em {{ post['date'] }} por {{ post['authot'] }}</em></p>
+            <p><em>Publicado em {{ post['date'] }} por {{ post['author'] }}</em></p>
         </article>
 
     {% endfor %} 
